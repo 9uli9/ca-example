@@ -44,9 +44,8 @@ class RegisteredUserController extends Controller
         ]);
 
         $role_user = Role::where('name', 'user')->first();
+
         $user->roles()->attach($role_user);
-
-
 
         event(new Registered($user));
 
