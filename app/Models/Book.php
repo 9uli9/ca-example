@@ -16,9 +16,9 @@ class Book extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'title',
+        'isbn',
+        'book_image',
     ];
 
     public function publisher(){

@@ -12,19 +12,19 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('user.books.index')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('admins.books.index')" :active="request()->routeIs('dashboard')">
                         {{ __('Books') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('user.publishers.index')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('admins.publishers.index')" :active="request()->routeIs('dashboard')">
                         {{ __('Publishers') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('user.authors.index')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('admins.authors.index')" :active="request()->routeIs('dashboard')">
                         {{ __('Authors') }}
                     </x-nav-link>
                 </div>
